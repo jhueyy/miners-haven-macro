@@ -7,7 +7,6 @@ A Python application that automates mouse clicks and keyboard actions for Miner'
 - **GUI Interface**: Easy-to-use graphical interface with start/stop/reset controls
 - **Configurable Countdown**: Set a countdown timer before the macro starts
 - **Real-time Status**: See what action is currently being performed
-- **Safety Features**: Move mouse to screen corner to stop the macro (failsafe)
 - **Looping**: Automatically repeats the entire macro sequence
 - **Reset Functionality**: Reset the macro to start fresh from the beginning
 
@@ -18,6 +17,27 @@ A Python application that automates mouse clicks and keyboard actions for Miner'
    ```bash
    pip install -r requirements.txt
    ```
+
+## Setup Requirements
+
+**Important**: This macro is configured for:
+- **14-inch Mac** screen resolution
+- **Roblox window minimized** as much as possible
+- **Roblox window positioned** in the top right of the screen
+
+If your setup differs, you may need to adjust the coordinates in the code.
+
+## In-Game Setup
+
+**Before running the macro, ensure:**
+- You have **enough money** in-game to rebirth
+- You are **ready to rebirth** (all conditions met)
+- Your game setup takes approximately **24 seconds** to complete
+
+**Timing Notes:**
+- The macro waits 24 seconds between cycles
+- You can adjust this timing in the code if your setup takes longer or shorter
+- The timing assumes your rebirth process completes within 24 seconds
 
 ## Usage
 
@@ -43,39 +63,8 @@ A Python application that automates mouse clicks and keyboard actions for Miner'
    - Wait 24 seconds
    - Repeat the entire process
 
-## Setup Requirements
-
-**Important**: This macro is configured for:
-- **14-inch Mac** screen resolution
-- **Roblox window minimized** as much as possible
-- **Roblox window positioned** in the top right of the screen
-
-If your setup differs, you may need to adjust the coordinates in the code.
-
-## Safety Features
-
-- **Failsafe**: Move your mouse to any screen corner to stop the macro
-- **Stop Button**: Click the "Stop Macro" button to halt execution
-- **Reset Button**: Click "Reset" to start fresh from the beginning
-- **Threading**: The GUI remains responsive during macro execution
-
 ## Requirements
 
 - Python 3.7+
 - pyautogui
-- tkinter (usually comes with Python)
-
-## Notes
-
-- Make sure Roblox is in the correct position before starting
-- The macro uses absolute screen coordinates specific to 14-inch Mac setup
-- Test the macro on a safe application first to verify coordinates
-- The application includes small delays between actions to ensure reliability
-
-## Troubleshooting
-
-- If the macro doesn't work as expected, check that your screen resolution matches the coordinates
-- Ensure Roblox is active and visible in the top right corner
-- Try running with administrator privileges if needed
-- Check that pyautogui is properly installed: `pip install pyautogui`
-- Adjust coordinates in the code if your Roblox window position differs 
+- tkinter (usually comes with Python) 
